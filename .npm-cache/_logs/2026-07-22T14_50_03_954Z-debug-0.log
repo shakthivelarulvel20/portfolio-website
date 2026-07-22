@@ -1,0 +1,52 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.11.0
+2 info using node@v24.14.1
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\shakt\Documents\Codex\2026-07-22\i\.npmrc
+5 silly config load:file:C:\Users\shakt\.npmrc
+6 silly config load:file:C:\Users\shakt\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install
+8 verbose argv "install" "--no-audit" "--no-fund" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\shakt\Documents\Codex\2026-07-22\i\.npm-cache\_logs\2026-07-22T14_50_03_954Z-
+10 verbose logfile C:\Users\shakt\Documents\Codex\2026-07-22\i\.npm-cache\_logs\2026-07-22T14_50_03_954Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly idealTree buildDeps
+14 silly fetch manifest lenis@^1.3.17
+15 silly packumentCache full:https://registry.npmjs.org/lenis cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/lenis 350ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/lenis set size:undefined disposed:false
+18 silly fetch manifest @nuxt/kit@>=3.0.0
+19 silly packumentCache full:https://registry.npmjs.org/@nuxt%2fkit cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@nuxt%2fkit 496ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@nuxt%2fkit set size:undefined disposed:false
+22 silly fetch manifest react@^18.3.1
+23 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+24 http cache https://registry.npmjs.org/react 51ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/react set size:6820987 disposed:false
+26 silly fetch manifest vue@>=3.0.0
+27 silly packumentCache full:https://registry.npmjs.org/vue cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/vue 175ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/vue set size:undefined disposed:false
+30 silly fetch manifest typescript@*
+31 silly packumentCache full:https://registry.npmjs.org/typescript cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/typescript 400ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/typescript set size:undefined disposed:false
+34 silly placeDep ROOT lenis@1.3.25 OK for: shakthivel-portfolio@1.0.0 want: ^1.3.17
+35 silly reify mark retired [
+35 silly reify   'C:\\Users\\shakt\\Documents\\Codex\\2026-07-22\\i\\node_modules\\@studio-freight\\lenis'
+35 silly reify ]
+36 silly reify moves {
+36 silly reify   'C:\\Users\\shakt\\Documents\\Codex\\2026-07-22\\i\\node_modules\\@studio-freight\\lenis': 'C:\\Users\\shakt\\Documents\\Codex\\2026-07-22\\i\\node_modules\\@studio-freight\\.lenis-6AnHDp5j'
+36 silly reify }
+37 http cache lenis@https://registry.npmjs.org/lenis/-/lenis-1.3.25.tgz 0ms (cache hit)
+38 silly tarball no local data for lenis@https://registry.npmjs.org/lenis/-/lenis-1.3.25.tgz. Extracting by manifest.
+39 http fetch GET 200 https://registry.npmjs.org/lenis/-/lenis-1.3.25.tgz 212ms (cache miss)
+40 silly ADD node_modules/lenis
+41 silly REMOVE node_modules/@studio-freight/lenis
+42 verbose cwd C:\Users\shakt\Documents\Codex\2026-07-22\i
+43 verbose os Windows_NT 10.0.26200
+44 verbose node v24.14.1
+45 verbose npm  v11.11.0
+46 verbose exit 0
+47 info ok
