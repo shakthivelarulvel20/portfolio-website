@@ -5,7 +5,26 @@ import Lenis from 'lenis';
 import { ArrowDownRight, ArrowUpRight, Code2, Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 import './styles.css';
 
-const skills = ['Python', 'Java', 'SQL', 'FastAPI', 'Spring Boot', 'Next.js', 'ReactJS', 'AWS', 'Docker', 'LLM Integration', 'Data Structures & Algorithms', 'Agile / Scrum'];
+const skills = [
+  // Languages
+  'Python', 'Java', 'SQL',
+  
+  // Frameworks & Tools
+  'FastAPI', 'Spring Boot', 'Hibernate', 'Next.js', 'ReactJS', 'REST APIs', 'Jira', 
+  
+  // Cloud & DevOps
+  'AWS', 'Docker', 'Git', 'CI/CD', 'Deployment Pipelines',
+  
+  // AI / ML
+  'LLM Integration', 'Groq / Llama 3', 'CNNs', 'Tesseract OCR', 'NLP', 'Sentiment Analysis',
+  
+  // CS Fundamentals
+  'Data Structures & Algorithms', 'System Design', 'OOP', 'DBMS', 
+  'Operating Systems', 'Computer Networks', 'Trees & Graphs', 'Dynamic Programming',
+  
+  // Engineering Practices
+  'Agile / Scrum', 'SDLC', 'Unit Testing'
+];
 const experiences = [
   { date: 'DEC 2024 - FEB 2025', company: 'TCS iON', role: 'Software Engineering Intern - Automate Extraction of Handwritten Text from an image', text: 'Coordinated directly with client-side stakeholders to capture requirements and produce technical documentation. Designed an OCR pipeline from scratch using CNNs and Tesseract, then applied rigorous root-cause analysis to isolate edge cases, achieving 92% accuracy and reducing manual entry time by 40%.' }
 ];
@@ -115,7 +134,7 @@ function App() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.15 }}
-        variants={slideUp}><motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: .35 }} variants={reveal}><p className="section-index">ABOUT</p><div className="about-grid"><h2>I engineer dependable systems where <i>intelligence</i> creates an edge.</h2><div className="about-copy"><p className="body-copy">I am a Software Development Engineer with 2+ years of experience building and deploying full-stack and backend systems in production environments. My work lives at the intersection of dependable engineering and applied AI: architecting clean REST APIs, cloud-ready services, and thoughtful LLM integrations.</p><p className="body-copy">With Python, Java, FastAPI, and Spring Boot as core tools, I turn complex requirements into scalable, maintainable products. Every solution is shaped around production realities: performance, deployment, observability, and an experience that feels seamless to the people using it.</p></div></div></motion.div></motion.section>
+        variants={slideUp}><motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: .35 }} variants={reveal}><p className="section-index">ABOUT</p><div className="about-grid"><h2>I engineer dependable systems where <i>intelligence</i> creates an edge.</h2><div className="about-copy"><p className="body-copy">I am a Software Development Engineer focused on architecting and deploying resilient backend systems, intelligent AI pipelines, and modern full-stack applications. My work lives at the intersection of robust system design and applied artificial intelligence.</p><p className="body-copy">I leverage Python, Java, FastAPI, and Spring Boot to build clean REST APIs and cloud-ready microservices, alongside Next.js for responsive frontend experiences. From engineering custom validation-first AI personas using Llama 3 to structuring enterprise-grade databases, I prioritize clean, OOP-compliant code and Agile methodologies. I treat performance, deployment, and scalability not as afterthoughts, but as the foundation of every product I build.</p></div></div></motion.div></motion.section>
       <motion.section
         id="experience"
         className="section experience"
