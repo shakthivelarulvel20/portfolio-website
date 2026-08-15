@@ -26,6 +26,12 @@ const skills = [
   'Agile / Scrum', 'SDLC', 'Unit Testing'
 ];
 const experiences = [
+  { 
+    date: 'AUG 2026 - PRESENT', 
+    company: 'Hard n Soft Technologies, Chennai', 
+    role: 'Project Management', 
+    text: 'Currently leading project lifecycles, coordinating cross-functional technical teams, and managing deliverables to ensure scalable software solutions are deployed efficiently and on schedule.' 
+  },
   { date: 'DEC 2024 - FEB 2025', company: 'TCS iON', role: 'Software Engineering Intern - Automate Extraction of Handwritten Text from an image', text: 'Coordinated directly with client-side stakeholders to capture requirements and produce technical documentation. Designed an OCR pipeline from scratch using CNNs and Tesseract, then applied rigorous root-cause analysis to isolate edge cases, achieving 92% accuracy and reducing manual entry time by 40%.' }
 ];
 const projects = [
