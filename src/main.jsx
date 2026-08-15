@@ -7,7 +7,6 @@ import './styles.css';
 
 const skills = ['Python', 'Java', 'SQL', 'FastAPI', 'Spring Boot', 'Next.js', 'ReactJS', 'AWS', 'Docker', 'LLM Integration', 'Data Structures & Algorithms', 'Agile / Scrum'];
 const experiences = [
-  { date: 'MAR 2024 - JUL 2026', company: 'Conshan Digital', role: 'Software Development Engineer', text: 'Owned features end-to-end, from root-cause analysis through production release. Partnered closely with product and QA in Agile/Scrum cycles to ship resilient ReactJS, Spring Boot, and FastAPI systems; strengthened delivery skills by containerizing environments with Docker and deploying production services on AWS.' },
   { date: 'DEC 2024 - FEB 2025', company: 'TCS iON', role: 'Software Engineering Intern', text: 'Coordinated directly with client-side stakeholders to capture requirements and produce technical documentation. Designed an OCR pipeline from scratch using CNNs and Tesseract, then applied rigorous root-cause analysis to isolate edge cases, achieving 92% accuracy and reducing manual entry time by 40%.' }
 ];
 const projects = [
