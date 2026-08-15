@@ -7,7 +7,7 @@ import './styles.css';
 
 const skills = ['Python', 'Java', 'SQL', 'FastAPI', 'Spring Boot', 'Next.js', 'ReactJS', 'AWS', 'Docker', 'LLM Integration', 'Data Structures & Algorithms', 'Agile / Scrum'];
 const experiences = [
-  { date: 'DEC 2024 - FEB 2025', company: 'TCS iON', role: 'Software Engineering Intern', text: 'Coordinated directly with client-side stakeholders to capture requirements and produce technical documentation. Designed an OCR pipeline from scratch using CNNs and Tesseract, then applied rigorous root-cause analysis to isolate edge cases, achieving 92% accuracy and reducing manual entry time by 40%.' }
+  { date: 'DEC 2024 - FEB 2025', company: 'TCS iON', role: 'Software Engineering Intern - Automate Extraction of Handwritten Text from an image', text: 'Coordinated directly with client-side stakeholders to capture requirements and produce technical documentation. Designed an OCR pipeline from scratch using CNNs and Tesseract, then applied rigorous root-cause analysis to isolate edge cases, achieving 92% accuracy and reducing manual entry time by 40%.' }
 ];
 const projects = [
   { n: '01', title: 'Klaros AI', type: 'Enterprise Document Intelligence Pipeline', tech: 'Java / Spring Boot / Hibernate / Groq API / Llama 3', color: 'blue', catalyst: 'Built to replace slow, fragmented document operations with an intelligent system that turns unstructured files into reliable, usable data.', problem: 'Manual document workflows create bottlenecks, introduce errors, and keep teams waiting on information they need to make decisions.', differentiator: 'Built entirely from scratch in 30 days. Groq API and Llama 3 power structured extraction, cutting document processing time by 60%.' },
