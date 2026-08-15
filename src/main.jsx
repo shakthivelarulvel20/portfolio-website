@@ -27,13 +27,47 @@ function Magnetic({ children, className = '', href, onClick, ...props }) {
 
 function TiltCard({ project }) {
   const x = useMotionValue(0), y = useMotionValue(0);
-  const rotateX = useTransform(y, [-.5, .5], ['7deg', '-7deg']); const rotateY = useTransform(x, [-.5, .5], ['-7deg', '7deg']);
-  return <motion.article className={`project-card ${project.color}`} style={{ rotateX, rotateY }} onMouseMove={e => { const r = e.currentTarget.getBoundingClientRect(); x.set((e.clientX - r.left) / r.width - .5); y.set((e.clientY - r.top) / r.height - .5); }} onMouseLeave={() => { x.set(0); y.set(0); }}>
-    <div className="card-top"><span>{project.n}</span><ArrowUpRight size={21} /></div><div className="orb" />
-    <div className="project-copy"><p className="eyebrow">{project.type}</p><h3>{project.title}</h3><span className="tech">{project.tech}</span>
-      <dl className="project-deep-dive"><div><dt>The Catalyst</dt><dd>{project.catalyst}</dd></div><div><dt>The Real-World Problem</dt><dd>{project.problem}</dd></div><div><dt>The Differentiator</dt><dd>{project.differentiator}</dd></div></dl>
-    </div>
-  </motion.article>;
+  const rotateX = useTransform(y, [-.5, .5], ['7deg', '-7deg']); 
+  const rotateY = useTransform(x, [-.5, .5], ['-7deg', '7deg']);
+  
+  return (
+    <motion.article 
+      className={`project-card ${project.color}`} 
+      style={{ rotateX, rotateY }} 
+      onMouseMove={e => { 
+        const r = e.currentTarget.getBoundingClientRect(); 
+        x.set((e.clientX - r.left) / r.width - .5); 
+        y.set((e.clientY - r.top) / r.height - .5); 
+      }} 
+      onMouseLeave={() => { 
+        x.set(0); 
+        y.set(0); 
+      }}
+    >
+      <div className="card-top">
+        <span>{project.n}</span>
+        {/* Render link if it exists, otherwise just render the icon */}
+        {project.link ? (
+          <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.title} live site`}>
+            <ArrowUpRight size={21}/>
+          </a>
+        ) : (
+          <ArrowUpRight size={21}/>
+        )}
+      </div>
+      <div className="orb" />
+      <div className="project-copy">
+        <p className="eyebrow">{project.type}</p>
+        <h3>{project.title}</h3>
+        <span className="tech">{project.tech}</span>
+        <dl className="project-deep-dive">
+          <div><dt>The Catalyst</dt><dd>{project.catalyst}</dd></div>
+          <div><dt>The Real-World Problem</dt><dd>{project.problem}</dd></div>
+          <div><dt>The Differentiator</dt><dd>{project.differentiator}</dd></div>
+        </dl>
+      </div>
+    </motion.article>
+  );
 }
 
 function Marquee({ reverse = false }) { const items = [...skills, ...skills]; return <div className="marquee"><div className={`marquee-track ${reverse ? 'reverse' : ''}`}>{items.map((s, i) => <span className="skill" key={`${s}-${i}`}>{s}<i /></span>)}</div></div>; }
