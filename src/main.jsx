@@ -46,7 +46,7 @@ function TiltCard({ project }) {
     >
       <div className="card-top">
         <span>{project.n}</span>
-        {/* Render link if it exists, otherwise just render the icon */}
+        {/* Makes the top right arrow clickable too */}
         {project.link ? (
           <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.title} live site`}>
             <ArrowUpRight size={21}/>
@@ -59,7 +59,32 @@ function TiltCard({ project }) {
       <div className="project-copy">
         <p className="eyebrow">{project.type}</p>
         <h3>{project.title}</h3>
-        <span className="tech">{project.tech}</span>
+        
+        {/* Reduce margin if a link exists to fit it nicely */}
+        <span className="tech" style={{ marginBottom: project.link ? '12px' : '27px' }}>
+          {project.tech}
+        </span>
+        
+        {/* NEW: Visible and clickable link in the card body */}
+        {project.link && (
+          <a 
+            href={project.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              marginBottom: '27px',
+              color: '#d0ced9',
+              fontSize: '13px',
+              fontFamily: '"DM Mono", monospace',
+              textDecoration: 'underline',
+              textUnderlineOffset: '4px'
+            }}
+          >
+            Live Site: {project.link}
+          </a>
+        )}
+
         <dl className="project-deep-dive">
           <div><dt>The Catalyst</dt><dd>{project.catalyst}</dd></div>
           <div><dt>The Real-World Problem</dt><dd>{project.problem}</dd></div>
